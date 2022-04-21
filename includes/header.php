@@ -13,11 +13,11 @@
                         <a class="nav-link" href="#" style="color:white">Why Become Donor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Become a Donor</a>
+                        <a class="nav-link" href="become-donar.php" style="color:white">Become a Donor</a>
                     </li>
                  
                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Search Blood</a>
+                        <a class="nav-link" href="search-donor.php" style="color:white">Search Blood</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" style="color:white">Request for Blood</a>
