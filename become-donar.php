@@ -13,8 +13,7 @@
     <meta name="author" content="">
 
     <title>JOOTRH BloodBank & Donor Management System | Become A Donor</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
     <link href="css/modern-business.css" rel="stylesheet">
     <style>
     .navbar-toggler {
@@ -53,10 +52,10 @@
 
 <?php include('includes/header.php');?>
 
-    <!-- Page Content -->
+    
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
+        
         <h1 class="mt-4 mb-3">Become a <small>Donor</small></h1>
 
         <ol class="breadcrumb">
@@ -66,7 +65,7 @@
             <li class="breadcrumb-item active">Become a Donor</li>
         </ol>
             
-        <!-- Content Row -->
+    
         <form name="donar" method="post">
 <div class="row">
 <div class="col-lg-4 mb-4">
@@ -133,15 +132,12 @@
 
 
 
-        <!-- /.row -->
+        
 </form>   
-        <!-- /.row -->
+        
 </div>
   <?php include('includes/footer.php');?>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
 
 </body>
 
