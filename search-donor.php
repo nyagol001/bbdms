@@ -15,8 +15,7 @@ include('includes/config.php');
     <meta name="author" content="">
 
     <title>BloodBank & Donor Management System | Become A Donar</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
     <link href="css/modern-business.css" rel="stylesheet">
     <style>
     .navbar-toggler {
@@ -55,10 +54,10 @@ include('includes/config.php');
 
 <?php include('includes/header.php');?>
 
-    <!-- Page Content -->
+    
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
+
         <h1 class="mt-4 mb-3">Search <small>Donor</small></h1>
 
         <ol class="breadcrumb">
@@ -69,7 +68,7 @@ include('includes/config.php');
         </ol>
             <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
-        <!-- Content Row -->
+        
         <form name="donar" method="post">
 <div class="row">
 
@@ -96,7 +95,7 @@ include('includes/config.php');
 <div><input type="submit" name="submit" class="btn btn-primary" value="submit" style="cursor:pointer"></div>
 </div>
 </div>
-       <!-- /.row -->
+       
 </form>   
 
 
@@ -116,11 +115,9 @@ include('includes/config.php');
 
 </div>
   <?php include('includes/footer.php');?>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
 
 </body>
 
 </html>
+
