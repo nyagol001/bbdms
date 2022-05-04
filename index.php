@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +11,7 @@
     <meta name="author" content="">
 
     <title>BloodBank and Donor Management System</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet">
     <link href="css/modern-business.css" rel="stylesheet">
     <style>
     .navbar-toggler {
@@ -28,22 +28,23 @@
     .carousel-item-prev {
         display: block;
     }
+
     </style>
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    
 <?php include('includes/header.php');?>
 <?php include('includes/slider.php');?>
    
-    <!-- Page Content -->
+    
     <div class="container">
 
         <h1 class="my-4" style="color:blue">JOOTRH BLOOD BANK AND DONOR MANAGEMENT SYSTEM</h1>
 
-        <!-- Marketing Icons Section -->
+        
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card">
@@ -70,15 +71,15 @@
                 </div>
             </div>
         </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Section -->
         
 
         
-        <!-- /.row -->
+        
 
-        <!-- Features Section -->
+        
+        
+
+        
         <div class="row">
             <div class="col-lg-6">
                 <h2 style="color:blue">BLOOD GROUPS</h2>
@@ -111,11 +112,11 @@
                 <img class="img-fluid rounded" src="images/blood-donor(2).gif" alt="">
             </div>
         </div>
-        <!-- /.row -->
+        
 
         <hr>
 
-        <!-- Call to Action Section -->
+        
         <div class="row mb-4">
             <div class="col-md-8">
             <h4 style="color:blue">UNIVERSAL DONORS AND RECIPIENTS</h4>
@@ -130,16 +131,14 @@ Type O individuals are often called "universal donors" since their blood can be 
         </div>
 
     </div>
-    <!-- /.container -->
 
-    <!-- Footer -->
+
+    
   <?php include('includes/footer.php');?>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/tether/tether.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    
+    
 </body>
 
 </html>
+
