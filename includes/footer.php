@@ -1,8 +1,18 @@
+<style>
+.footer {
+text-align: center;
+background-color: green;
+color: white;
+margin-top: 10px;
+width: 100%;
+}
+
+
+</style>
+
+<div class="footer">
+  <p>Copyright &copy; JOOTRH BloodBank & Donor Management System 2022</p>
+</div> 
+
   
   
-  <footer class="py-5 bg-success">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; JOOTRH BloodBank & Donor Management System 2022</p>
-        </div>
-        <!-- /.container -->
-    </footer>
