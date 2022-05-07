@@ -14,7 +14,7 @@
 
     <title>JOOTRH BloodBank & Donor Management System | Become A Donor</title>
     
-    <link href="css/modern-business.css" rel="stylesheet">
+    
     <style>
     .navbar-toggler {
         z-index: 1;
