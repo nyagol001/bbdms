@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,24 +10,97 @@
     <meta name="author" content="">
 
     <title>BloodBank and Donor Management System</title>
-    <link href="css/home.css" rel="stylesheet">
-    <link href="css/modern-business.css" rel="stylesheet">
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    .carousel-item.active,
-    .carousel-item-next,
-    .carousel-item-prev {
-        display: block;
-    }
 
+    
+    
+    <style>
+   body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { 
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h4 { 
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h6 { 
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  border-radius: 15px;
+}
+.card-text {
+    padding-left:2%
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.container {
+  padding: 2px 16px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+	margin-right: -15x;
+    margin-left: -15px;
+}
+.col-6{
+	flex: 0 0 50%;
+	max-width: 50%;
+}
     </style>
 
 </head>
@@ -43,44 +115,43 @@
     <div class="container">
 
         <h1 class="my-4" style="color:blue">JOOTRH BLOOD BANK AND DONOR MANAGEMENT SYSTEM</h1>
+        
+<div class="row">
+<div class="card">
+  <div class="container">
+    <h4 style="color:blue"><b>The need for blood</b></h4>
+    <p>The reason to donate is simple…it helps save lives. In fact, every two seconds of every day, someone needs blood. Since blood cannot be manufactured outside the body and has a limited shelf life, the supply must constantly be replenished by generous blood donors.</p>
+  </div>
+</div> 
 
-        
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <h4 class="card-header" style="color:blue">The need for blood</h4>
-                   
-                        <p class="card-text" style="padding-left:2%">The reason to donate is simple…it helps save lives. In fact, every two seconds of every day, someone needs blood. Since blood cannot be manufactured outside the body and has a limited shelf life, the supply must constantly be replenished by generous blood donors. </p>
-                </div>
-            </div><br /><br />
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <h4 class="card-header" style="color:blue">Blood Tips</h4>
-                   
-                        <p class="card-text" style="padding-left:2%">Check blood stock online</p> <br>
-                        <p class="card-text" style="padding-left:2%">Drink lots of water </p> <br>
-                        <p class="card-text" style="padding-left:2%">Eat salty snack </p> <br>
-                        <p class="card-text" style="padding-left:2%">Wear loose, comfortable clothing </p> <br>
-                </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <h4 class="card-header" style="color:blue">Who you could Help</h4>
-                   
-                        <p class="card-text" style="padding-left:2%">Every day, blood donors help patients of all ages: accident and burn victims, heart surgery and organ transplant patients, and those battling cancer.  </p>
-                </div>
-            </div>
-        </div>
-        
+<div class="card">
+<div class="container">
+    <h4 style="color:blue"><b>Blood Tips</b></h4>
+    <p class="card-text">Check blood stock online</p> <br>
+    <p class="card-text">Drink lots of water </p> <br>
+    <p class="card-text">Eat salty snack </p> <br>
+    <p class="card-text">Wear loose, comfortable clothing </p> <br>
+  </div>
+</div> 
 
-        
+<div class="card">
+  <div class="container">
+    <h4 style="color:blue"><b>Who you could Help</b></h4>
+    <p class="card-text">Every day, blood donors help patients of all ages: accident and burn victims, heart surgery and organ transplant patients, and those battling cancer. </p>
+  </div>
+</div> 
+</div>
+</div>
         
 
         
         
 
         
-        <div class="row">
+        
+
+        
+
             <div class="col-lg-6">
                 <h2 style="color:blue">BLOOD GROUPS</h2>
           <p>  Blood group of any human being will mainly fall in any one of the following groups.</p>
@@ -117,7 +188,7 @@
         <hr>
 
         
-        <div class="row mb-4">
+    
             <div class="col-md-8">
             <h4 style="color:blue">UNIVERSAL DONORS AND RECIPIENTS</h4>
                 <p>
@@ -141,4 +212,3 @@ Type O individuals are often called "universal donors" since their blood can be 
 </body>
 
 </html>
-
