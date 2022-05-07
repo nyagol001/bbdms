@@ -16,7 +16,7 @@ include('includes/config.php');
 
     <title>BloodBank & Donor Management System | Become A Donar</title>
     
-    <link href="css/modern-business.css" rel="stylesheet">
+
     <style>
     .navbar-toggler {
         z-index: 1;
