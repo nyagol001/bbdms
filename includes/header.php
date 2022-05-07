@@ -1,33 +1,82 @@
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-success">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container">
-            <a class="navbar-brand" href="index.php">JOOTRH BloodBank Management System</a>
-            <div class="collapse navbar-collapse" id="navbarExample">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Why Become Donor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="become-donar.php" style="color:white">Become a Donor</a>
-                    </li>
-                 
-                     <li class="nav-item">
-                        <a class="nav-link" href="search-donor.php" style="color:white">Search Blood</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Request for Blood</a>
-                    </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#" style="color:white">Contact us</a>
-                    </li>
-                 
-                 
-                </ul>
-            </div>
-        </div>
-    </nav>
+<head>
+
+<style>
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+  <h2>JOOTRH Bloodbank Management System</h2>
+</div>
+
+<div id="navbar">
+  <a class="active" href="index.php">Home</a>
+  <a href="#">About</a>
+  <a href="#">Why Become donor</a>
+  <a href="#">Become a Donor</a>
+  <a href="#">Search Blood</a>
+  <a href="#">Request Blood</a>
+  <a href="#">Contact Us</a>
+</div>
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
