@@ -13,38 +13,74 @@
     <meta name="author" content="">
 
     <title>JOOTRH BloodBank & Donor Management System | Become A Donor</title>
-    
-    
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-        <style>
-    .errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
-.succWrap{
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #5cb85c;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-}
-    </style>
 
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 100px;
+  background-color: white;
+}
+
+input[type=text], select[name=gender], select[name=bloodgroup] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+input[type=textarea] {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  resize: none;
+  display: inline-block;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  position: relative;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+        </style>
 
 </head>
 
@@ -53,89 +89,52 @@
 <?php include('includes/header.php');?>
 
     
-    <div class="container">
+<form name="donar" method="post">
+<div class="container">
+    <h1>Become a Donor</h1>
+    <p>Please fill in this form to register as a donor</p>
+    <hr>
 
-        
-        <h1 class="mt-4 mb-3">Become a <small>Donor</small></h1>
+    <label for="fullname"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="fullname" id="fullname" required>
 
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="index.php">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Become a Donor</li>
-        </ol>
-            
+    <label for="mobileno"><b>Mobile Number</b></label>
+    <input type="text" placeholder="Enter Mobile Number" name="mobileno" id="mobileno" required>
+
+    <label for="emailid"><b>Email Id</b></label>
+    <input type="text" placeholder="Enter Email" name="emailid" id="emailid" required>
     
-        <form name="donar" method="post">
-<div class="row">
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Full Name<span style="color:red">*</span></div>
-<div><input type="text" name="fullname" class="form-control" required></div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Mobile Number<span style="color:red">*</span></div>
-<div><input type="text" name="mobileno" class="form-control" required></div>
-</div>
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Email Id</div>
-<div><input type="email" name="emailid" class="form-control"></div>
-</div>
-</div>
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter Age" name="age" id="age"  min="18" max="70" required>
 
-<div class="row">
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Age<span style="color:red">*</span></div>
-<div><input type="text" name="age" class="form-control" required></div>
-</div>
+    <label for="address"><b>Address</b></label>
+    <input type="textarea" placeholder="Enter Your Address" name="adress" id="address" required>
+
+    <label for="message"><b>Message</b></label>
+    <input type="textarea" placeholder="Enter Message" name="message" id="message" required>
 
 
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Gender<span style="color:red">*</span></div>
-<div><select name="gender" class="form-control" required>
-<option value="">Select</option>
-<option value="Male">Male</option>
-<option value="Female">Female</option>
+    <label for="gender"><b>Gender</b></label>
+    <select name="gender" required>
+    <option value="">Select</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    </select>
+
+    <label for="bloodgroup"><b>Blood Group</b></label>
+    <select name="bloodgroup" required>
+   
 </select>
-</div>
-</div>
 
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Blood Group<span style="color:red">*</span> </div>
-<div><select name="bloodgroup" class="form-control" required>
+    <hr>
 
-</select>
-</div>
-</div>
-</div>
+ <button type="submit" class="registerbtn">Register</button>
+    
 
-
-<div class="row">
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Address</div>
-<div><textarea class="form-control" name="address"></textarea></div>
-</div>
-
-<div class="col-lg-8 mb-4">
-<div class="font-italic">Message<span style="color:red">*</span></div>
-<div><textarea class="form-control" name="message" required> </textarea></div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-lg-4 mb-4">
-<div><input type="submit" name="submit" class="btn btn-primary" value="submit" style="cursor:pointer"></div>
-</div>
-
-
-
-</div>
-
-
-
-        
+    </div>
 </form>   
         
-</div>
+
   <?php include('includes/footer.php');?>
     
 
