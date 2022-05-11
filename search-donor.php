@@ -1,6 +1,4 @@
 <?php
-error_reporting(0);
-include('includes/config.php');
 
 ?>
 
@@ -14,36 +12,39 @@ include('includes/config.php');
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BloodBank & Donor Management System | Become A Donar</title>
+    <title>BloodBank & Donor Management System | Search Donor</title>
     
-
+    
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-    
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
-        <style>
-    .errorWrap {
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #dd3d36;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+  select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-.succWrap{
-    padding: 10px;
-    margin: 0 0 20px 0;
-    background: #fff;
-    border-left: 4px solid #5cb85c;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
     </style>
 
@@ -54,70 +55,27 @@ include('includes/config.php');
 
 <?php include('includes/header.php');?>
 
-    
-    <div class="container">
+<h3>Search Donor</h3>
 
-
-        <h1 class="mt-4 mb-3">Search <small>Donor</small></h1>
-
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="index.php">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Search  Donor</li>
-        </ol>
-            <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-        else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
-        
-        <form name="donar" method="post">
-<div class="row">
-
-
-
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Blood Group<span style="color:red">*</span> </div>
-<div><select name="bloodgroup" class="form-control" required>
-
+<div class="container">
+    <form name="donar"  method="post">
+    <label for="bloodgroup"><b>Blood Group</b></label>
+    <select name="bloodgroup" required>
+   
 </select>
-</div>
-</div>
 
+<label for="location">Location</label>
+    <textarea id="location" name="location" placeholder="Search By Donor's location" style="height:200px"></textarea>
 
-<div class="col-lg-4 mb-4">
-<div class="font-italic">Location </div>
-<div><textarea class="form-control" name="location"></textarea></div>
+    <input type="submit" name="submit" value="Submit">
+  </form>
 </div>
-
-</div>
-
-<div class="row">
-<div class="col-lg-4 mb-4">
-<div><input type="submit" name="submit" class="btn btn-primary" value="submit" style="cursor:pointer"></div>
-</div>
-</div>
-       
-</form>   
-
-
-                    </div>
-                </div>
-            </div>
+    
 
      
-          
- 
-
-
-
-        </div>
-
-
-
-</div>
   <?php include('includes/footer.php');?>
     
 
 </body>
 
 </html>
-
