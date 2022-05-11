@@ -61,10 +61,10 @@
   <a class="active" href="index.php">Home</a>
   <a href="#">About</a>
   <a href="#">Why Become donor</a>
-  <a href="#">Become a Donor</a>
-  <a href="#">Search Blood</a>
-  <a href="#">Request Blood</a>
-  <a href="#">Contact Us</a>
+  <a href="become-donar.php">Become a Donor</a>
+  <a href="search-donor.php">Search Blood</a>
+  <a href="request-blood.php">Request Blood</a>
+  <a href="contact.php">Contact Us</a>
 </div>
     <script>
 window.onscroll = function() {myFunction()};
