@@ -10,13 +10,13 @@
     <meta name="author" content="">
 
     <title>BloodBank and Donor Management System</title>
-
+    <link href="css/home.css" rel="stylesheet">
     
     
     <style>
    body {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -75,10 +75,12 @@ h6 {
     font-weight: bold;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 29px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 30%;
-  border-radius: 15px;
+  height: 30%;
+  border-radius: 20px;
+  
 }
 .card-text {
     padding-left:2%
@@ -101,6 +103,11 @@ h6 {
 	flex: 0 0 50%;
 	max-width: 50%;
 }
+
+.vl {
+  border-right: 10px solid grey;
+  height: 210px;
+}
     </style>
 
 </head>
@@ -119,29 +126,35 @@ h6 {
 <div class="row">
 <div class="card">
   <div class="container">
-    <h4 style="color:blue"><b>The need for blood</b></h4>
+    <h4 style="color:blue"><b>The need for blood</b></h4> <hr>
+</div>
+<div class="container">
     <p>The reason to donate is simple…it helps save lives. In fact, every two seconds of every day, someone needs blood. Since blood cannot be manufactured outside the body and has a limited shelf life, the supply must constantly be replenished by generous blood donors.</p>
   </div>
-</div> 
+</div><div class="vl"></div>
 
 <div class="card">
 <div class="container">
-    <h4 style="color:blue"><b>Blood Tips</b></h4>
-    <p class="card-text">Check blood stock online</p> <br>
-    <p class="card-text">Drink lots of water </p> <br>
-    <p class="card-text">Eat salty snack </p> <br>
-    <p class="card-text">Wear loose, comfortable clothing </p> <br>
+    <h4 style="color:blue"><b>Blood Tips</b></h4><hr>
+</div>
+<div class="container">
+    <p class="card-text">Check blood stock online</p> 
+    <p class="card-text">Drink lots of water </p> 
+    <p class="card-text">Eat salty snack </p> 
+    <p class="card-text">Wear loose, comfortable clothing </p> 
   </div>
-</div> 
+</div><div class="vl"></div>
 
 <div class="card">
   <div class="container">
-    <h4 style="color:blue"><b>Who you could Help</b></h4>
+    <h4 style="color:blue"><b>Who you could Help</b></h4><hr>
+</div>
+<div class="container">
     <p class="card-text">Every day, blood donors help patients of all ages: accident and burn victims, heart surgery and organ transplant patients, and those battling cancer. </p>
   </div>
 </div> 
 </div>
-</div>
+</div><br /><br />
         
 
         
@@ -197,7 +210,7 @@ The most common blood type is O, followed by type A.
 Type O individuals are often called "universal donors" since their blood can be transfused into persons with any blood type. Those with type AB blood are called "universal recipients" because they can receive blood of any type.</p>
             </div>
             <div class="col-md-4">
-                <a class="btn btn-lg btn-primary btn-block" href="become-donar.php">Become a Donor</a>
+                <a class="btn btn-primary" href="become-donar.php">Become a Donor</a>
             </div>
         </div>
 
